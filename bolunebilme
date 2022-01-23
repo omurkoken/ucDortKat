@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ucVeDorteBolum {
+    public static void main(String[] args) {
+
+        Scanner veri = new Scanner(System.in);
+
+        System.out.print("Bir sayi giriniz:");
+        double sayi = veri.nextDouble();
+
+
+        if (sayi >=3) {
+
+            if ((sayi % 3 == 0) && (sayi % 4 == 0)) {
+                System.out.println("Girilen sayı 3 ve 4e tam olarak bölünür");
+            } else {
+                System.out.println("Girilen sayi 3 ve 4'ün katı degildir.");
+            }
+
+        } else {
+            System.out.print("lütfen en az 3 ve üzeri bir sayı giriniz");
+        }
+    }
+}
